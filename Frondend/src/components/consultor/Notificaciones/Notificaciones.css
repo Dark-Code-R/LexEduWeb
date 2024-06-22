@@ -1,0 +1,144 @@
+/* Notificaciones.css */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cambia el color de fondo */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 10vh; /* Establece la altura al 80% del viewport height */
+  }
+  
+  /* Estilos para el navbar */
+  .navbar {
+    background-color: #333; /* Cambia el color de fondo */
+    padding: 10px 0; /* Reducimos el espacio interno */
+    position: fixed; /* Fijar la barra de navegación en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegurarse de que la barra de navegación esté por encima de otros elementos */
+  }
+  
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    color: #fff; /* Cambia el color del texto del logo */
+    font-size: 1.2rem; /* Reducimos el tamaño del texto */
+    text-transform: uppercase;
+  }
+  
+  .nav-links-horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links-horizontal li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos */
+  }
+  
+  .nav-links-horizontal li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-links-horizontal a {
+    color: #fff; /* Cambia el color del texto de los enlaces */
+    text-decoration: none;
+    font-size: 0.9rem; /* Reducimos el tamaño del texto */
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .nav-links-horizontal a:hover {
+    color: #ffd700; /* Cambia el color del texto al pasar el ratón */
+  }
+  
+  /* Estilos para el contenido del dashboard */
+  .dashboard-content {
+    display: flex;
+    margin-top: 60px; /* Espacio para la barra de navegación fija */
+  }
+  
+  .main-content {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  /* Estilos para las notificaciones */
+  .notificaciones {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    margin-top: 20px;
+  }
+  
+  .notificaciones h2 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .notifications-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notification {
+    background-color: #555;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .notification.read {
+    background-color: #666; /* Cambia el color de fondo de las notificaciones leídas */
+  }
+  
+  .notification p {
+    margin: 0;
+    flex: 1;
+  }
+  
+  .notification button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  
+  .notification button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mejoras en la presentación */
+  .notification:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .notification p {
+    flex-grow: 1;
+    margin-right: 10px;
+    text-align: left;
+  }
+  

@@ -1,0 +1,143 @@
+/* SimuladorDeCasos.css */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cambia el color de fondo */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 10vh; /* Establece la altura al 80% del viewport height */
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #333; /* Cambia el color de fondo */
+    padding: 10px 0; /* Reducimos el espacio interno */
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff; /* Cambia el color del texto del logo */
+    font-size: 1.2rem; /* Reducimos el tamaño del texto */
+    text-transform: uppercase;
+}
+
+.nav-links-horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-horizontal li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.nav-links-horizontal li:last-child {
+    margin-right: 0;
+}
+
+.nav-links-horizontal a {
+    color: #fff; /* Cambia el color del texto de los enlaces */
+    text-decoration: none;
+    font-size: 0.9rem; /* Reducimos el tamaño del texto */
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links-horizontal a:hover {
+    color: #ffd700; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Estilos para el contenido del dashboard */
+.dashboard-content {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1; /* Ajusta el ancho de la barra lateral */
+    height: 90vh; 
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+}
+
+/* Estilos para el simulador de casos */
+.simulador-casos {
+    background-color: #fff; /* Cambia el color de fondo */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
+.simulador-casos h2 {
+    margin-bottom: 20px;
+    color: #000; /* Cambia el color del texto a negro */
+}
+
+/* Ajuste de la altura de línea */
+.nav-links-horizontal a,
+.simulador-casos p {
+    line-height: 1.4; /* Ajusta la altura de línea */
+}
+
+/* Estilos para el área del juego */
+.game-area {
+    background-color: #eaeaea; /* Color de fondo del área de juego */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el área de juego */
+    height: 500px; /* Ajusta la altura del área de juego */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000; /* Color del texto negro */
+}
+
+/* Estilos para el botón Nuevo Chat */
+.new-chat-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cambia el color de fondo del botón */
+    color: black; /* Cambia el color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Cambia el tamaño del texto del botón */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-chat-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}

@@ -1,0 +1,103 @@
+/* Estilos para el contenedor del chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh; /* Ajusta la altura según sea necesario */
+  width: 40vw; /* Ajusta el ancho según sea necesario */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 20px auto; /* Centrar el contenedor horizontalmente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenedor de los mensajes */
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los mensajes individuales */
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: black; /* Cambia el color de la letra a negro */
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #d3d3d3; /* Cambia el color a gris */
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #e0e0e0; /* Cambia el color a gris más claro */
+}
+
+/* Estilos para el contenedor de entrada */
+.input-container {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 0 0 10px 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: black; /* Cambia el color de la letra a negro */
+}
+
+.input-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d3d3d3; /* Cambia el color a gris */
+  color: black; /* Cambia el color de la letra a negro */
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.input-container button:hover {
+  background-color: #a9a9a9; /* Cambia el color a gris más oscuro */
+}
+
+/* Estilos generales */
+p {
+  margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Listas en el mensaje */
+ul, ol {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Estilos de focus para el input */
+.input-container input:focus {
+  outline: none;
+  border: 1px solid #007bff; /* Color del borde al hacer focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al hacer focus */
+}

@@ -1,0 +1,150 @@
+/* Formulario.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a237e, #0d47a1); /* Fondo gradiente */
+}
+
+.spline-container {
+  width: 100%;
+  max-width: 300px;
+  height: 290px;
+  margin-bottom: 3rem; /* Agrega espacio entre la escena y el formulario */
+  position: relative; /* Asegura que el contenedor se posicione correctamente */
+  z-index: 5; /* Asegura que el spline esté encima del mensaje */
+}
+
+.form-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:2rem;
+  background-color: rgba(33, 33, 33, 0.9); /* Fondo oscuro con transparencia */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  margin-top: 800px; /* Baja el formulario */
+  animation: fadeIn 1s ease-in-out; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ffcc00; /* Color dorado */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-message {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #ff6b6b, #ffd93b); /* Degradado */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideIn 2s ease-in-out;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.Formulario {
+  width: 100%;
+}
+
+.Formulario input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.Formulario input:focus {
+  outline: none;
+  background-color: #444;
+}
+
+.Formulario button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.Formulario button:hover {
+  transform: scale(1.05);
+}
+
+.Formulario button[type="submit"] {
+  background: linear-gradient(45deg, #03a9f4, #2196f3); /* Degradado azul */
+  color: white;
+}
+
+.Formulario button[type="button"] {
+  background: linear-gradient(45deg, #ffc107, #ff9800); /* Degradado amarillo */
+  color: white;
+}
+
+.Formulario button[type="submit"]:hover {
+  background: linear-gradient(45deg, #0288d1, #0277bd); /* Degradado azul oscuro */
+}
+
+.Formulario button[type="button"]:hover {
+  background: linear-gradient(45deg, #ffa000, #ff8f00); /* Degradado amarillo oscuro */
+}
+
+.Formulario p {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+}
